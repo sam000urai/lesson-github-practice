@@ -248,3 +248,94 @@
        height: 50px;
        background-color: green;
      }
+
+
+/* 課題4 */
+     /* 親要素(コンテナ) */
+ .flex-row-container3 {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .flex-column-container3 {
+       display: flex;
+       width: 1000px;
+       background-color: skyblue;
+     }
+
+     /* 子要素(アイテム) */
+     .flex-item3 {
+       background-color: blue;
+       padding: 0px;
+     }
+
+     .testbox-1 {
+       margin-top: 80px;
+       width: 2000px;
+       height: 300px;
+       background-color: red;
+     }
+
+     .testbox-2 {
+       display: flex;
+       flex-wrap: wrap;
+       width: 600px;
+       height: 400px;
+       background-color:#F9D64B;
+     }
+
+     .testbox-2-1 {
+       margin: 80px 110px 10px 100px;
+       width: 800px;
+       height: 100px;
+       background-color:skyblue;
+     }
+
+     .testbox-2-2 {
+       margin: 1px 3px 1px 100px;
+       width: 75px;
+       height: 75px;
+       background-color:skyblue;
+     }
+
+     .testbox-2-3 {
+       margin: 1px 3px 1px 1px;
+       width: 75px;
+       height: 75px;
+       background-color:skyblue;
+     }
+
+     .testbox-2-4 {
+      margin: 1px 3px 1px 1px;
+      width: 75px;
+      height: 75px;
+      background-color:skyblue;
+    }
+
+    .testbox-2-5 {
+      margin: 1px 3px 1px 1px;
+      width: 75px;
+      height: 75px;
+      background-color:skyblue;
+    }
+
+    .testbox-2-6 {
+      margin: 1px 50px 1px 1px;
+      width: 75px;
+      height: 75px;
+      background-color:skyblue;
+    }
+
+     .testbox-3 {
+       width: 400px;
+       height: 400px;
+       background-color:#9BBF35;
+     }
+
+    .testbox-3-1 {
+      margin: 50px 50px 50px 50px;
+      width: 300px;
+      height: 300px;
+      background-color:skyblue;
+    }
+
