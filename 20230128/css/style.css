@@ -42,3 +42,26 @@
 .wrapper{
   display: flex;
 }
+
+.testbox1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+   }
+   
+.testbox2{
+       width: 100px;
+       height: 100px;
+       background-color: red;
+      }
+   
+.testbox3{
+       width: 100px;
+       height: 100px;
+       background-color: green;
+      }
+.testbox4{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+       }
