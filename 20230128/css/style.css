@@ -43,6 +43,7 @@
   display: flex;
 }
 
+/* 問題1 */
 .testbox1{
     width: 100px;
     height: 100px;
@@ -75,3 +76,67 @@
         height: 100px;
         background-color: red;
        }
+
+/* 問題2 */
+.flex{
+       height: 250px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: baseline;
+     }
+     
+.testbox7{
+    width: 100px;
+    height: 75px;
+    background-color:blue;
+      }
+   
+.testbox8{
+       width: 100px;
+       height: 75px;
+       background-color:black;
+      }
+
+.testbox8-2{
+       width: 100px;
+       height: 25px;
+       background-color:blue;
+      }
+      
+.testbox8-3{
+       width: 100px;
+       height: 25px;
+       background-color:green;
+      }
+
+.testbox8-4{
+       width: 100px;
+       height: 50px;
+       background-color:yellow;
+      }
+
+.testbox9{
+       width: 100px;
+       height: 25px;
+       background-color: red;
+      }
+
+.testbox10{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+       }
+
+.testbox11{
+        width: 100px;
+        height: 75px;
+        background-color: blue;
+       }
+
+.testbox12{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+       }
+     
