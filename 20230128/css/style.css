@@ -140,3 +140,71 @@
         background-color: green;
        }
      
+ /* 問題2-2 */
+ .flex-row-container {
+       display: flex;
+     }
+     
+     .flex-column-container {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .flex-item {
+       background-color: 
+     green;
+       margin: 0px;
+       padding: 50px;
+
+     }
+
+     .item1 {
+       margin-top: 80px;
+       width: 100px;
+       height: 100px;
+       background-color: blue;
+     }
+
+     .item2 {
+       width: 100px;
+       height: 100px;
+       background-color: red;
+     }
+
+     .item3 {
+       width: 100px;
+       height: 35px;
+       margin-top: 80px;
+       background-color: black;
+     }
+
+     .item4 {
+       width: 100px;
+       height: 35px;
+       background-color: green;
+     }
+
+     .item5 {
+       width: 100px;
+       height: 30px;
+       background-color: blue;
+     }
+
+     .item6 {
+       margin-top: 80px;
+       width: 100px;
+       height: 1px;
+       background-color: red;
+     }
+
+     .item7 {
+       width: 100px;
+       height: 25px;
+       background-color: yellow;
+     }
+
+     .item8 {
+       width: 100px;
+       height: 74px;
+       background-color: green;
+     }
