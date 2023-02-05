@@ -342,37 +342,220 @@
     }
 
 /* 課題5:レスポンシブ対応 */
-  @media screen and (min-width:480px) {
-      .sample1{
-        width: 1000px;
-        height: 300px;
-        background-color:skyblue;
-        display: none<span style="color: #ff6600;">!important</span>;
-      }
+.contents {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.text-center {
+  text-align: center;
+}
+.flexbox {
+  display: flex;
+}
+.flexbox .box100 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: blue;
+}
+.flexbox .box200 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: red;
+}
+.flexbox .box300 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: black;
+} 
+.flexbox .box400 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: green;
+}
 
-      .sample2{
-        text-align: center;
-        width: 1000px;
-        height: 300px;
-        background-color:blue;
-        display: none<span style="color: #ff6600;">!important</span>;
-      }
-    }
+@media screen and (max-width: 767px) {
+  .flexbox {
+      display: block;
+  }
+  .flexbox .box100 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: blue;
+  }
+  .flexbox .box200 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: red;
+  }
+  .flexbox .box300 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: black;
+  } 
+  .flexbox .box400 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: green;
+  } 
+}
 
-    @media screen and (max-width:479px) {
-      .sample1{
-        width: 500px;
-        height: 300px;
-        background-color:skyblue;
-        display: none<span style="color: #ff6600;">!important</span>;
-      }
+/* 課題5-2:レスポンシブ対応 */
 
-      .sample2{
-        text-align: center;
-        width: 500px;
-        height: 300px;
-        background-color:blue;
-        display: none<span style="color: #ff6600;">!important</span>;
-      }
-    }
-
+.flex-parent {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap; /*折り返し*/
+  justify-content:space-between;/*両端揃え*/
+}
+.flex-child {
+  width:32%;
+  display:flex;
+  flex-direction:column;
+  border:1px solid #ccc;
+  box-sizing:border-box;
+  border-radius:16px;
+}
+.flex-grandchild-img {
+  width:100%;
+  height:auto;
+  position:relative;
+}
+.flex-grandchild-img::after {
+  display:block;
+  content:'';
+  width:100%;
+  height:0;
+  padding-top:64%;
+}
+.flex-grandchild-img img {
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;left:0;
+  border-radius:16px 16px 0 0;
+}
+.flex-grandchild-inner {
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+  width:100%;
+}
+.flex-grandchild-inner h3 {
+  display:flex;
+  align-items:center;
+  min-height:56px;
+  color: black;
+  font-size:1.4rem;
+  line-height:1.6;
+  padding:5px 0;
+  margin:0 10px;
+  box-sizing:border-box;
+  border-bottom:1px solid #ccc;
+}
+.flex-grandchild-inner h3 img {
+  display:block;
+  width:12.5%;height:auto;
+  margin-right:8px;
+}
+.flex-grandchild-innerText {
+  flex-grow:1;
+  padding:5px 10px;
+  box-sizing:border-box;
+}
+.flex-grandchild-innerLink {
+  width:100%;
+  height:auto;
+}
+.flex-grandchild-innerLink a {
+  width:90%;
+  height:48px;
+  margin:10px auto 20px auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  background:skyblue;
+  border-radius:8px;
+}
+@media screen and (max-width: 1360px) {
+  .flex-parent {
+    width:90%;
+    max-width:initial;
+    height:auto;
+    margin:0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .flex-child {
+    width:49%;
+    display:flex;
+    flex-direction:column;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius:16px;
+  }
+  .flex-child:nth-of-type(n+3) {
+    margin-top:40px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .flex-child {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius:16px;
+  }
+  .flex-child:nth-of-type(n+2) {
+    margin-top:40px;
+  }
+  .flex-grandchild-img img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+    top:0;left:0;
+    border-radius:16px 0 0 16px;/*角丸変更*/
+  }
+  .flex-grandchild-inner h3 {
+    padding:10px 0;
+  }
+  .flex-grandchild-innerText {
+    min-height:120px;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;/* 4行以上は省略 */
+  }
+}
+@media screen and (max-width: 786px) {
+  .flex-parent {
+    width:70%;
+    margin:0 auto;
+  }
+  .flex-child {
+    flex-direction:column;
+  }
+  .flex-grandchild-img img {
+    border-radius:16px 16px 0 0;/*角丸変更*/
+  }
+}
+@media screen and (max-width: 480px) {
+  .flex-parent {
+    width:90%;/*全体の幅を90%に*/
+  }
+}
