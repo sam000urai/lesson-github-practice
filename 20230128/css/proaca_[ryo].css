@@ -1,0 +1,561 @@
+.red{
+    color:red
+}
+
+.bg_color_change{
+ width: 900px;
+ height: 200px;
+ background-color: red;
+ text-align: center;
+}
+
+.big{
+ font-size: 30px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: blue;
+}
+
+.box1{
+ width: 100px;
+ height: 100px;
+ background-color: blue;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+   }
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+   }
+
+.wrapper{
+  display: flex;
+}
+
+
+/* 課題1 */
+.testbox1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+   }
+   
+.testbox2{
+       width: 100px;
+       height: 100px;
+       background-color: red;
+      }
+   
+.testbox3{
+       width: 100px;
+       height: 100px;
+       background-color: green;
+      }
+.testbox4{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+       }
+.testbox5{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+       }
+.testbox6{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+       }
+
+/* 課題2:ミス */
+.flex{
+       height: 250px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: baseline;
+     }
+     
+.testbox7{
+    width: 100px;
+    height: 75px;
+    background-color:blue;
+      }
+   
+.testbox8{
+       width: 100px;
+       height: 75px;
+       background-color:black;
+      }
+
+.testbox8-2{
+       width: 100px;
+       height: 25px;
+       background-color:blue;
+      }
+      
+.testbox8-3{
+       width: 100px;
+       height: 25px;
+       background-color:green;
+      }
+
+.testbox8-4{
+       width: 100px;
+       height: 50px;
+       background-color:yellow;
+      }
+
+.testbox9{
+       width: 100px;
+       height: 25px;
+       background-color: red;
+      }
+
+.testbox10{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+       }
+
+.testbox11{
+        width: 100px;
+        height: 75px;
+        background-color: blue;
+       }
+
+.testbox12{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+       }
+     
+ /* 課題2-2 */
+     .flex-row-container {
+       display: flex;
+     }
+     
+     .flex-column-container {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .flex-item {
+       background-color: 
+     green;
+       margin: 0px;
+       padding: 50px;
+     }
+
+     .item1 {
+       margin-top: 80px;
+       width: 100px;
+       height: 100px;
+       background-color: blue;
+     }
+
+     .item2 {
+       width: 100px;
+       height: 100px;
+       background-color: red;
+     }
+
+     .item3 {
+       width: 100px;
+       height: 35px;
+       margin-top: 80px;
+       background-color: black;
+     }
+
+     .item4 {
+       width: 100px;
+       height: 35px;
+       background-color: green;
+     }
+
+     .item5 {
+       width: 100px;
+       height: 30px;
+       background-color: blue;
+     }
+
+     .item6 {
+       margin-top: 80px;
+       width: 100px;
+       height: 1px;
+       background-color: red;
+     }
+
+     .item7 {
+       width: 100px;
+       height: 25px;
+       background-color: yellow;
+     }
+
+     .item8 {
+       width: 100px;
+       height: 74px;
+       background-color: green;
+     }
+
+ /* 課題3 */
+ .flex-row-container2 {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .flex-column-container2 {
+       display: flex;
+     }
+
+     .flex-item2 {
+       background-color: 
+     green;
+       padding: 10px;
+     }
+
+     .box1 {
+       margin-top: 80px;
+       width: 500px;
+       height: 50px;
+       background-color: blue;
+     }
+
+     .box2 {
+       width: 400px;
+       height: 200px;
+       background-color: red;
+     }
+
+     .box3 {
+       width: 80px;
+       height: 200px;
+       background-color: black;
+     }
+
+     .box4 {
+       width: 500px;
+       height: 50px;
+       background-color: green;
+     }
+ 
+
+
+/* 課題4 */
+     /* 親要素(コンテナ) */
+ .flex-row-container3 {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .flex-column-container3 {
+       display: flex;
+       width: 1000px;
+       background-color: skyblue;
+     }
+
+     /* 子要素(アイテム) */
+     .flex-item3 {
+       background-color: blue;
+       padding: 0px;
+     }
+
+     .testbox-1 {
+       margin-top: 80px;
+       width: 2000px;
+       height: 300px;
+       background-color: red;
+     }
+
+     .testbox-2 {
+       display: flex;
+       flex-wrap: wrap;
+       width: 600px;
+       height: 400px;
+       background-color:#F9D64B;
+     }
+
+     .testbox-2-1 {
+       margin: 80px 110px 10px 100px;
+       width: 800px;
+       height: 100px;
+       background-color:skyblue;
+     }
+
+     .testbox-2-2 {
+       margin: 1px 3px 1px 100px;
+       width: 75px;
+       height: 75px;
+       background-color:skyblue;
+     }
+
+     .testbox-2-3 {
+       margin: 1px 3px 1px 1px;
+       width: 75px;
+       height: 75px;
+       background-color:skyblue;
+     }
+
+     .testbox-2-4 {
+      margin: 1px 3px 1px 1px;
+      width: 75px;
+      height: 75px;
+      background-color:skyblue;
+    }
+
+    .testbox-2-5 {
+      margin: 1px 3px 1px 1px;
+      width: 75px;
+      height: 75px;
+      background-color:skyblue;
+    }
+
+    .testbox-2-6 {
+      margin: 1px 50px 1px 1px;
+      width: 75px;
+      height: 75px;
+      background-color:skyblue;
+    }
+
+     .testbox-3 {
+       width: 400px;
+       height: 400px;
+       background-color:#9BBF35;
+     }
+
+    .testbox-3-1 {
+      margin: 50px 50px 50px 50px;
+      width: 300px;
+      height: 300px;
+      background-color:skyblue;
+    }
+
+/* 課題5:レスポンシブ対応 */
+.contents {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.text-center {
+  text-align: center;
+}
+.flexbox {
+  display: flex;
+}
+.flexbox .box100 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: blue;
+}
+.flexbox .box200 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: red;
+}
+.flexbox .box300 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: black;
+} 
+.flexbox .box400 {
+  width: 45%;
+  height: 100%;
+  margin: auto .5rem;
+  background-color: green;
+}
+
+@media screen and (max-width: 767px) {
+  .flexbox {
+      display: block;
+  }
+  .flexbox .box100 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: blue;
+  }
+  .flexbox .box200 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: red;
+  }
+  .flexbox .box300 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: black;
+  } 
+  .flexbox .box400 {
+    width: 45%;
+    height: 100%;
+    margin: auto .5rem;
+    background-color: green;
+  } 
+}
+
+/* 課題5-2:レスポンシブ対応 */
+
+.flex-parent {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap; /*折り返し*/
+  justify-content:space-between;/*両端揃え*/
+}
+.flex-child {
+  width:32%;
+  display:flex;
+  flex-direction:column;
+  border:1px solid #ccc;
+  box-sizing:border-box;
+  border-radius:16px;
+}
+.flex-grandchild-img {
+  width:100%;
+  height:auto;
+  position:relative;
+}
+.flex-grandchild-img::after {
+  display:block;
+  content:'';
+  width:100%;
+  height:0;
+  padding-top:64%;
+}
+.flex-grandchild-img img {
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;left:0;
+  border-radius:16px 16px 0 0;
+}
+.flex-grandchild-inner {
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+  width:100%;
+}
+.flex-grandchild-inner h3 {
+  display:flex;
+  align-items:center;
+  min-height:56px;
+  color: black;
+  font-size:1.4rem;
+  line-height:1.6;
+  padding:5px 0;
+  margin:0 10px;
+  box-sizing:border-box;
+  border-bottom:1px solid #ccc;
+}
+.flex-grandchild-inner h3 img {
+  display:block;
+  width:12.5%;height:auto;
+  margin-right:8px;
+}
+.flex-grandchild-innerText {
+  flex-grow:1;
+  padding:5px 10px;
+  box-sizing:border-box;
+}
+.flex-grandchild-innerLink {
+  width:100%;
+  height:auto;
+}
+.flex-grandchild-innerLink a {
+  width:90%;
+  height:48px;
+  margin:10px auto 20px auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  background:skyblue;
+  border-radius:8px;
+}
+@media screen and (max-width: 1360px) {
+  .flex-parent {
+    width:90%;
+    max-width:initial;
+    height:auto;
+    margin:0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .flex-child {
+    width:49%;
+    display:flex;
+    flex-direction:column;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius:16px;
+  }
+  .flex-child:nth-of-type(n+3) {
+    margin-top:40px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .flex-child {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    border-radius:16px;
+  }
+  .flex-child:nth-of-type(n+2) {
+    margin-top:40px;
+  }
+  .flex-grandchild-img img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+    top:0;left:0;
+    border-radius:16px 0 0 16px;/*角丸変更*/
+  }
+  .flex-grandchild-inner h3 {
+    padding:10px 0;
+  }
+  .flex-grandchild-innerText {
+    min-height:120px;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;/* 4行以上は省略 */
+  }
+}
+@media screen and (max-width: 786px) {
+  .flex-parent {
+    width:70%;
+    margin:0 auto;
+  }
+  .flex-child {
+    flex-direction:column;
+  }
+  .flex-grandchild-img img {
+    border-radius:16px 16px 0 0;/*角丸変更*/
+  }
+}
+@media screen and (max-width: 480px) {
+  .flex-parent {
+    width:90%;/*全体の幅を90%に*/
+  }
+}
