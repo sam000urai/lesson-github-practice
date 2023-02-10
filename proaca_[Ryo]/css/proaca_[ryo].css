@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/***********************************************/
+/* 目次 */
+/*=============================================*/
+/*   00.setting                                */
+/*   01.common                                 */
+/*   02.layout                                 */
+/*   03.content(Page)                          */
+/*=============================================*/
+/***********************************************/
+/*=============================================*/
+/*00.setting*/
+/*=============================================*/
+
+article, aside, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, main {
+    display: block;
+}
+
+blockquote, body, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a, a:link {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    height: auto;
+    vertical-align: bottom;
+}
+
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input[type="radio"]::-ms-check, input[type="checkbox"]::-ms-check {
+    display: none;
+}
+
+i {
+    font-style: normal;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::placeholder {
+    /* Others */
+    color: #ccc
+}
+
+/*=============================================*/
+/*01 common*/
+/*=============================================*/
+
+html {
+    font-size: 62.5%;
+    overflow: auto;
+}
+
+body {
+    margin: auto;
+    width: auto;
+    font-family: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a, b, dd, dt, li, p, span, td, th {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #333;
+}
+
+.sp_only {
+    display: none !important;
+}
+
+@media screen and (max-width:767px) {
+    .sp_only {
+        display: block !important;
+    }
+    .pc_only {
+        display: none !important;
+    }
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+    line-height: 180%;
+}
+
+.max_width {
+    max-width: 1000px;
+    width: 96%;
+    margin: auto;
+}
+
+.main_visual {
+    text-align: center;
+}
+
+.bg_yellow {
+    background-color: #fffeea;
+}
+
+.bg_blue {
+    background-color: #eaf0ff;
+}
+
+.bg_dark_blue {
+    background-color: #003685;
+}
+
+.bg_red {
+    background-color: #ffeaf0;
+}
+
+.bg_dark_red {
+    background-color: #e50012;
+}
+
+.bg_green {
+    background-color: #ebffea;
+}
+
+.bg_gray {
+    background-color: #f5f5f5;
+}
+
+.light_red {
+    background-color: #ffeaf0;
+}
+
+.right_blue {
+    background-color: #eaf0ff;
+}
+
+.margin_bottom_4 {
+    margin-bottom: 4%;
+}
+
+.margin_bottom_2 {
+    margin-bottom: 2%;
+}
+
+.margin_bottom_none {
+    margin-bottom: 0;
+}
+
+.seventeen_pt_text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    line-height: 1.6;
+}
+
+.right {
+    margin: 0 0 0 auto;
+}
+
+.center {
+    margin: auto;
+}
+
+section {
+    padding: 30px 0;
+}
+
+/*=============================================*/
+/*   02.layout                               */
+/*=============================================*/
+
+.main_width {
+    width: 96%;
+    max-width: 1260px;
+    margin: auto;
+}
+
+/***************************/
+/*Header*/
+/***************************/
+
+header .top {
+    width: 66%;
+    margin: 0 auto;
+    background-color: #003685;
+}
+
+header .top .right {
+    width: 96%;
+    max-width: 1260px;
+}
+
+header .top .right .right_txt {
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.header_nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon_box {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    width: 28%;
+    height: auto;
+}
+
+.main_nav {
+    width: 70%;
+    height: auto;
+}
+
+.main_nav ul {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.main_nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main_nav ul li:last-child {
+    margin-right: 0;
+}
+
+.main_nav ul li a {
+    position: relative;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.main_nav ul li.contact_area a {
+    display: block;
+    padding: 0.5em 1.5em 0.5em 3em;
+    background-color: #e50012;
+    border-radius: 15px;
+    margin: auto;
+    color: #fff;
+    font-weight: bold;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.main_nav ul li.contact_area a::before {
+    position: absolute;
+    left: 1em;
+    top: 0;
+    bottom: 0;
+    content: '\f0e0';
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    line-height: 1em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: lighter;
+}
+
+.button_container .contact_area {
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+.button_container .contact_area a {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 1.2em 1.5em 1.2em 3em;
+    background-color: #e50012;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 0.08em;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+    box-sizing: border-box;
+}
+
+.button_container .contact_area a::before {
+    position: absolute;
+    left: 1em;
+    top: 0;
+    bottom: 0;
+    content: '\f0e0';
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    line-height: 1em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+.main_nav ul li.contact_area a:hover,
+.button_container .contact_area a:hover {
+    background-color: #003583;
+}
+
+/***************************/
+/*ヘッダー下、メインpicture部分*/
+/***************************/
+
+.main_visual {
+    padding: 0;
+}
+
+.main_visual .main_width {
+    width: 100%;
+}
+
+.under_txt_box {
+    max-width: 1260px;
+    margin: auto;
+    padding: 10px 20px 0;
+    background-color: #003583;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.up_left_area {
+    width: 100%;
+    height: auto;
+}
+
+.up_right_area {
+  width: 40%;
+  height: 230px;
+  background-color: gray;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  line-height: 1.4;
+  margin: 40px;
+  border: 10px;
+  border-radius:5%;
+}
+
+.ttl_zone_right{
+  text-align: center;
+  line-height:230px;
+}
+
+.ttl_zone {
+    padding-top: 1%;
+}
+
+.ttl_zone span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    margin: 1% 0;
+}
+
+.ttl_zone_bg_white {
+    background-color: #f3f2cc;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.ttl_zone .ttl {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    color: #e50012;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    padding: 5px;
+}
+
+.ttl_zone .ttl b {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #e50012;
+    font-weight: 900;
+}
+
+.ttl_zone_context {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+}
+
+.seven_years {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    margin: 1% 0;
+    vertical-align: middle;
+}
+
+.seven_years::before {
+    content: "\\";
+    font-size: 3rem;
+    margin-right: 2px;
+}
+
+.seven_years::after {
+    content: '/';
+    font-size: 3rem;
+    margin-right: 2px;
+}
+
+.from_tenthousand_box {
+    height: auto;
+    width: auto;
+    max-width: 420px;
+    padding: 1% 1%;
+    margin: auto;
+    background-color: #f3f2cc;
+}
+
+.from_tenthousand_box h2 {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.from_tenthousand_box h2 span {
+    font-size: 3.0rem;
+    color: #e50012;
+    font-weight: bold;
+}
+
+.up_left_bottom_area {
+    display: flex;
+    margin: 0 auto;
+}
+
+.up_left_bottom_area .red_box {
+    position: relative;
+    width: 16%;
+    margin-right: 0.8%;
+    margin-bottom: 3%;
+    background-color: #e50012;
+    border-radius: 10px;
+}
+
+.up_left_bottom_area .red_box:last-child {
+    margin-right: 0;
+}
+
+.up_left_bottom_area .red_box p {
+    color: #fff;
+    font-weight: bold;
+    padding: 1em 0.3em;
+    line-height: 1.4;
+    font-size: 1.8rem;
+}
+
+.banner_area {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #797979;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.banner_area p {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/***************************/
+/*当店限定商品エリア*/
+/***************************/
+
+.mb_title {
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.mb_title img {
+    vertical-align: middle;
+}
+
+.mb_title span {
+    display: block;
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f74f05;
+    line-height: 1.4;
+}
+
+.mb_title span br {
+    display: none;
+}
+
+.mb_title .blue {
+    font-family: "Noto Sans Japanese", sans-serif;
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #003685;
+}
+
+.product_box_row {
+    width: 1300px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.product_detail_box {
+    position: relative;
+    width: 23%;
+    margin-bottom: 30px;
+    margin-right: 2.666%;
+    text-align: center;
+}
+
+.product_detail_box:nth-child(4n) {
+    margin-right: 0;
+}
+
+.product_detail_box .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e50012;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.product_detail_box .price span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e50012;
+}
+
+.product_detail_box .car_price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 2% 0;
+}
+
+.product_detail_box .car_explain {
+    margin-bottom: 0.4em;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.product_detail_box .car_explain b {
+    font-size: 1em;
+}
+
+.product_detail_box .img {
+    position: relative;
+}
+
+.red_circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    border-radius: 30px;
+    background-color: #e50012;
+}
+
+.red_circle p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 8px;
+}
+
+.red_circle p span {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.product_detail_box .ico {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+}
+
+.product_txt_area {
+    text-align: left;
+}
+
+/***************************/
+/*Footer_Visual*/
+/***************************/
+
+footer {
+    width: 100%;
+    background-color: #003685;
+}
+
+.telephone_number {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.telephone_number::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f879';
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-right: 0.2em;
+}
+
+.footer_contact_area {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer_contact_area a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 1px solid #f00;
+    padding: 0.5em 2em;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    border-radius: 15px;
+    background-color: #f00;
+}
+
+.footer_contact_area a:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.copy_right {
+    font-size: 1.6rem;
+    color: #fff;
+    padding-bottom: 2%;
+}
+
+footer .txt_link a {
+    display: block;
+    padding: 2em 0;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
