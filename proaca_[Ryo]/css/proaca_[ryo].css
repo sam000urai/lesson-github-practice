@@ -660,6 +660,115 @@ header .top .right .right_txt {
 }
 
 /***************************/
+/*contact*/
+/***************************/
+
+.contacnt_text {
+    width: 96%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.mb_title {
+    display: block;
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f74f05;
+    line-height: 1.4;
+}
+
+.contacnt_text p {
+    font-size: 1.4rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.contact_form_area {
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.input_area {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.input_box {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.textarea_box {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.label_box {
+    width: 50%;
+    padding-top: 2%;
+}
+
+.label_box label {
+    font-size: 1.5rem;
+}
+
+.input_box input[type=tel],
+.input_box input[type=email],
+.textarea_box textarea,
+.input_box input[type=text] {
+    border: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1em 0.5em;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.textarea_box textarea {
+    resize: none;
+    height: 6em;
+}
+
+.input_box input.mini {
+    width: 30%;
+}
+
+.send_button_area {
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.send_button_area input[type=submit] {
+    color: #fff;
+    padding: 0.7em 3em;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: #e50012;
+    border-radius: 40px;
+}
+
+.order-form-box {
+    padding-top: 1.5em;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-form-box .obf-content .mwform-radio-field input[type=radio]:checked+span::before {
+    opacity: 1;
+    content: '';
+    z-index: 1;
+}
+
+
+
+/***************************/
 /*Footer_Visual*/
 /***************************/
 
